@@ -1,0 +1,2 @@
+module Sound.ArareSynth where
+
