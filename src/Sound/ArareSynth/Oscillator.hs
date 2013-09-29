@@ -52,13 +52,13 @@ sinOscillator s = let
     { wtERange = 0
     , wtStep = 0
     , wtLength = len
-    , wtTable = fromList $ (makeWave $ sinList s)
+    , wtTable = fromList (makeWave $ sinList s)
     }
 
 -------------------
--- test program (must delete)
+-- silent
 
-osci = sinOscillator 44100 :: WaveTable Stereo
-wave f = oscillate osci $ replicate 100000 f
-test1 = sarasvatiOutput defaultConfig (wave $! 440)
-test2 = sarasvatiOutput defaultConfig (wave 440 /+/ wave 880)
+data Silent c = Silent
+instance Oscillator Silent where
+  oscillateF _ _ = (Silent, emptyFrame) 
+  

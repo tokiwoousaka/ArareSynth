@@ -16,7 +16,10 @@ build-type:          Simple
 cabal-version:       >=1.8
 
 library
-  exposed-modules:     Sound.ArareSynth
+  exposed-modules:     
+    Sound.ArareSynth,
+    Sound.ArareSynth.Oscillator,
+    Sound.ArareSynth.Types
   -- other-modules:       
   build-depends:       
     base ==4.6.*,
