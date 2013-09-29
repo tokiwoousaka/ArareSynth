@@ -1,4 +1,7 @@
-module Sound.ArareSynth where
+module Sound.ArareSynth
+  ( module Sound.ArareSynth
+  , module Sound.ArareSynth.Types
+  )  where
 import Control.DeepSeq
 import Sound.ArareSynth.Oscillator
 import Sound.ArareSynth.Types
