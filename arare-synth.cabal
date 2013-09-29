@@ -18,5 +18,8 @@ cabal-version:       >=1.8
 library
   exposed-modules:     Sound.ArareSynth
   -- other-modules:       
-  build-depends:       base ==4.6.*
+  build-depends:       
+    base ==4.6.*,
+    sarasvati >= 0.1.5,
+    vector >= 0.10.0.1
   hs-source-dirs:      src
