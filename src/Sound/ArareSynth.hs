@@ -1,5 +1,6 @@
 module Sound.ArareSynth
   ( module Sound.ArareSynth
+  , module Sound.ArareSynth.Oscillator
   , module Sound.ArareSynth.Types
   )  where
 import Control.DeepSeq
